@@ -3,7 +3,7 @@ package exerciciosSurgeridos;
 public class Titulo {
     private String titulo;
     private int anoDePublicacao;
-    private int quatidadesDePaginas;
+    private int tempoDeLeituraMedia;
 
     public String getTitulo() {
         return titulo;
@@ -21,17 +21,16 @@ public class Titulo {
         this.anoDePublicacao = anoDePublicacao;
     }
 
-    public int getQuatidadesDePaginas() {
-        return quatidadesDePaginas;
+    public int getTempoDeLeituraMedia() {
+        return tempoDeLeituraMedia;
     }
 
-    public void setQuatidadesDePaginas(int quatidadesDePaginas) {
-        this.quatidadesDePaginas = quatidadesDePaginas;
+    public void setTempoDeLeituraMedia(int tempoDeLeituraMedia) {
+        this.tempoDeLeituraMedia = tempoDeLeituraMedia;
     }
 
     public void exiberDetalhes(){
         System.out.println("Nome do livro: " + titulo);
         System.out.println("Ano de publicação " + anoDePublicacao);
-        System.out.println("A quantidades de paginas é: " + quatidadesDePaginas);
     }
 }

@@ -9,5 +9,7 @@ public class PrincipalLivros {
         livro1.exiberDetalhes();
         livro1.setAutor("Inio Asano");
         System.out.println("O nome do autor é: " + livro1.getAutor());
+        livro1.setTempoPaginaLida(3);
+        System.out.println("O tempo de leitura media do livro é " + livro1.getTempoDeLeituraMedia());
     }
 }
