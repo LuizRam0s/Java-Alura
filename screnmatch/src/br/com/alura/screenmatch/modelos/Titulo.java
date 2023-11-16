@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+import java.util.Comparator;
+
+public class Titulo implements Comparable<Titulo> {
     //Declaração dos atributos
     private String nome;
     private int anoLancamento;
@@ -8,6 +10,12 @@ public class Titulo {
     private double somaDasAvaliacao;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
+
+    //construtores
+    public Titulo(String nome, int anoLancamento){
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
 
     //getter para acessar valores
     public String getNome() {
@@ -49,7 +57,7 @@ public class Titulo {
 
     //Metodos
     public void exibeFichatecnica(){
-        System.out.println("Nome do filme: " + nome);
+        System.out.println("Nome do titulo: " + nome);
         System.out.println("Ano de lançamento: " + anoLancamento);
     }
 
@@ -72,5 +80,10 @@ public class Titulo {
                 ", totalDeAvaliacoes=" + totalDeAvaliacoes +
                 ", duracaoEmMinutos=" + duracaoEmMinutos +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
