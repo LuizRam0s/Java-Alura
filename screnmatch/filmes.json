@@ -1,0 +1,18 @@
+[
+  {
+    "Nome": "Mascara",
+    "AnoLancamento": 1987,
+    "IncluidonoPlano": false,
+    "SomaDasAvaliacao": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 94
+  },
+  {
+    "Nome": "Matrix",
+    "AnoLancamento": 1993,
+    "IncluidonoPlano": false,
+    "SomaDasAvaliacao": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 60
+  }
+]
